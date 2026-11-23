@@ -1,0 +1,4 @@
+method,method_name,mae,improvement_vs_naive_percent,evaluated_weeks,available_target_weeks
+naive,Naive,68.85714285714286,0.0,21,24
+ses,Simple exponential smoothing,74.14183618312848,-7.674865826120186,21,25
+ma4,4-week moving average,83.46428571428571,-21.213692946058075,21,21

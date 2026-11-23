@@ -1,0 +1,49 @@
+{
+  "raw_rows": 1067371,
+  "raw_unique_invoice_ids": 53628,
+  "missing_invoice_ids": 0,
+  "invalid_or_missing_dates": 0,
+  "cancellation_rows": 19494,
+  "other_non_numeric_invoice_rows": 6,
+  "nonpositive_quantity_rows": 22950,
+  "nonpositive_price_rows": 6207,
+  "eligible_sales_rows": 1041669,
+  "unique_sales_invoices_all_dates": 40076,
+  "invoice_ids_with_multiple_timestamps": 82,
+  "invoice_ids_crossing_week_boundaries": 0,
+  "full_calendar_weeks": 104,
+  "observed_weeks": 102,
+  "weeks_without_source_records": [
+    "2009-12-28",
+    "2010-12-27"
+  ],
+  "empty_weeks_assumed_zero": false,
+  "counted_orders_in_observed_full_weeks": 39013,
+  "first_full_week_start": "2009-12-07",
+  "last_full_week_end": "2011-12-04",
+  "source_first_date": "2009-12-01 07:45:00",
+  "source_last_date": "2011-12-09 12:50:00",
+  "source_file": "online_retail_II.xlsx",
+  "source_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+  "sheets": [
+    {
+      "sheet": "Year 2009-2010",
+      "rows": 525461,
+      "first_date": "2009-12-01 07:45:00",
+      "last_date": "2010-12-09 20:01:00"
+    },
+    {
+      "sheet": "Year 2010-2011",
+      "rows": 541910,
+      "first_date": "2010-12-01 08:26:00",
+      "last_date": "2011-12-09 12:50:00"
+    }
+  ],
+  "sheet_invoice_overlaps": [
+    {
+      "sheet_1": "Year 2009-2010",
+      "sheet_2": "Year 2010-2011",
+      "shared_invoice_ids": 1088
+    }
+  ]
+}

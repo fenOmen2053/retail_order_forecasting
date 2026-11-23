@@ -1,0 +1,33 @@
+{
+  "stage": "Preliminary development evaluation for midterm",
+  "target": "Weekly distinct eligible sales invoice count",
+  "horizon_weeks": 1,
+  "training": {
+    "first_week_start": "2009-12-07",
+    "last_week_end": "2010-12-05",
+    "calendar_weeks": 52
+  },
+  "development": {
+    "first_week_start": "2010-12-06",
+    "last_week_end": "2011-06-05",
+    "calendar_weeks": 26
+  },
+  "reserved_final_test": {
+    "first_week_start": "2011-06-06",
+    "last_week_end": "2011-12-04",
+    "calendar_weeks": 26
+  },
+  "final_test_evaluated": false,
+  "ses_alpha": 0.7,
+  "ses_alpha_selection": "Grid 0.05 to 1.00 in steps of 0.05; minimum training one-step SSE; first observed value initializes level; alpha is then fixed.",
+  "state_update": "After each development week, its observed value becomes available for the next one-week forecast.",
+  "missing_week_policy": "No imputation. Naive requires the previous calendar week; MA4 requires four consecutive previous observations; SES retains its level at missing observations.",
+  "metric": "MAE on the intersection of observed targets and predictions available from all methods; predictions are not rounded.",
+  "common_evaluated_weeks": 21,
+  "excluded_development_weeks": 5,
+  "missing_development_targets": 1,
+  "sources": [
+    "https://otexts.com/fpp3/toolbox.html#time-series-cross-validation",
+    "https://otexts.com/fpp3/exponential-smoothing.html#simple-exponential-smoothing"
+  ]
+}
